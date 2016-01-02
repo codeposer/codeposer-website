@@ -1,0 +1,20 @@
+module.exports = {
+    lang: 'zh-CN',
+    project_name: 'CodePoser',
+    project_slogan: '开发CodeIgniter更好的方式',
+    feature: '特性',
+    feature_composer: 'Composer',
+    feature_composer_description: '使用包管理工具，更好的组织依赖关系',
+    feature_server: '使用内置PHP服务器',
+    feature_server_description: '开发中无需安装Apache/Nginx等软件，依然支持URL重写',
+    feature_elixir: 'Laravel Elixir',
+    feature_elixir_description: 'Laravel Elixir 让你的前端开发更舒服，试试吧，你会爱上它的',
+    feature_easy: '简单',
+    feature_easy_description: '只需4步，您就可以完整享受CodePoser带来的便利',
+    quick_start: '快速开始',
+    quick_start_create_project: '创建项目',
+    quick_start_npm: '安装NodeJS模块',
+    quick_start_gulp: '执行Gulp',
+    quick_start_server: '启动服务器',
+    documentation: '手册'
+}

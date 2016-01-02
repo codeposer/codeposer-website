@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CodePoser - A better way to build modern CodeIgniter Applications.</title>
+        <meta name="description" content="CodePoser - A better way to build modern CodeIgniter Applications.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="dist/css/app.css">
+    </head>
+    <body>
+        <div id="fullpage">
+            <div class="section">
+                <div class="section-inner brand text-center">
+                    <h1 v-text="project_name"></h1>
+                    <p v-text="project_slogan"></p>
+                    <p class="github">
+                        <a class="github-button" href="https://github.com/chekun/codeposer" data-icon="octicon-star" data-style="mega" data-count-href="/chekun/codeposer/stargazers" data-count-aria-label="# stargazers on GitHub" aria-label="Star chekun/codeposer on GitHub">Star</a>
+                        <a class="github-button" href="https://github.com/chekun" data-style="mega" aria-label="Follow @chekun on GitHub">Follow @chekun</a>
+                    </p>
+                    <div class="arrow bounce"></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-inner feature text-center">
+                    <h1 v-text="feature"></h1>
+                    <div class="row">
+                        <div class="col col--1-of-4">
+                            <h2 v-text="feature_composer"></h2>
+                            <p v-text="feature_composer_description"></p>
+                        </div>
+                        <div class="col col--1-of-4">
+                            <h2 v-text="feature_server"></h2>
+                            <p v-text="feature_server_description"></p>
+                        </div>
+                        <div class="col col--1-of-4">
+                            <h2 v-text="feature_elixir"></h2>
+                            <p v-text="feature_elixir_description"></p>
+                        </div>
+                        <div class="col col--1-of-4">
+                            <h2 v-text="feature_easy"></h2>
+                            <p v-text="feature_easy_description"></p>
+                        </div>
+                    </div>
+                    <div class="arrow bounce"></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-inner quick-start">
+                    <h1 class="text-center" v-text="quick_start"></h1>
+                    <h3 v-text="quick_start_create_project"></h3>
+                    <code>composer create-project codeposer/codeposer .</code>
+                    <h3 v-text="quick_start_npm"></h3>
+                    <code>npm install</code>
+                    <h3 v-text="quick_start_gulp"></h3>
+                    <code>gulp</code>
+                    <h3 v-text="quick_start_server"></h3>
+                    <code>php -S localhost:9999 -t public server.php</code>
+                    <div class="arrow bounce"></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-inner documentation text-center">
+                    <h1 v-text="documentation">Documentation</h1>
+                    <p>
+                        <a href="">CodeIgniter</a>
+                        <a href="">Laravel Elixir</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/chekun/codeposer">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+        </a>
+        <div id="lang-switcher">
+            <a href="javascript:void(0);" v-on:click="switchLanguage('zh-CN')" v-show="lang !== 'zh-CN'">简体中文</a>
+            <a href="javascript:void(0);" v-on:click="switchLanguage('en')" v-show="lang !== 'en'">English</a>
+        </div>
+        <script src="dist/js/app.js"></script>
+        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-71910529-1','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
